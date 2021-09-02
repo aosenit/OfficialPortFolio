@@ -21,7 +21,7 @@
         </div>
         <div class="headerNav">
           <ul>
-            <li class="active"><a href="#home">Home</a></li>
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -118,42 +118,68 @@
       <div id="portfolio" class="anchor">
         <div class="portfolio container">
           <h2>Portfolio</h2>
-          <ul>
-            <li class="activePortfolio">Javascript</li>
-            <li>React JS</li>
-            <li>Next JS</li>
+          <ul class="portfolioLists">
+            <li id="all" class="activePortfolio">All</li>
+            <li id="javascript">Javascript</li>
+            <li id="react">React JS</li>
+            <!-- <li id="next">Next JS</li> -->
           </ul>
           <div class="portfolioProjectsContainer">
-            <div class="portfolioProject">
-              <img src="./assets/deemex.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
-            <div class="portfolioProject">
-              <img src="./assets/linkedinclone.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
-            <div class="portfolioProject">
-              <img src="./assets/maxaudio.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
-            <div class="portfolioProject">
-              <img src="./assets/tdunion.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
-            <div class="portfolioProject">
-              <img src="./assets/trazflix.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
-            <div class="portfolioProject">
-              <img src="./assets/trazfood.jpg" alt="portfolioimage" />
-              <h3>Music App</h3>
-              <h4>HTML, CSS, JavaScript</h4>
-            </div>
+            <a href="https://deemexclone.netlify.app" class="" target="_blank">
+              <div class="portfolioProject javascript">
+                <img src="./assets/deemex.jpg" alt="portfolioimage" />
+                <h3>Demeex Logistics</h3>
+                <h4>HTML, SASS, JavaScript, GSAP</h4>
+              </div>
+            </a>
+
+            <a href="https://maxuadio.netlify.app" class="" target="_blank">
+              <div class="portfolioProject javascript">
+                <img src="./assets/maxaudio.jpg" alt="portfolioimage" />
+                <h3>Audiomax Ecommerce</h3>
+                <h4>HTML, CSS, JavaScript</h4>
+              </div>
+            </a>
+            <a
+              href="https://taiwowedsdamilola.netlify.app
+            "
+              class=""
+              target="_blank"
+            >
+              <div class="portfolioProject javascript">
+                <img src="./assets/tdunion.jpg" alt="portfolioimage" />
+                <h3>TDunion</h3>
+                <h4>HTML, CSS, GSAP, JavaScript</h4>
+              </div>
+            </a>
+
+            <a href="https://trazfood.netlify.app" target="_blank" class="">
+              <div class="portfolioProject javascript">
+                <img src="./assets/trazfood.jpg" alt="portfolioimage" />
+                <h3>Trazfood Ecommerce</h3>
+                <h4>HTML, CSS, JavaScript</h4>
+              </div>
+            </a>
+
+            <a
+              href="https://trazflixclone.netlify.app"
+              class=""
+              target="_blank"
+            >
+              <div class="portfolioProject react">
+                <img src="./assets/trazflix.jpg" alt="portfolioimage" />
+                <h3>Trazflix Clone</h3>
+                <h4>React, TMDB API, Firebase, AUTH</h4>
+              </div>
+            </a>
+
+            <a href="" class="" target="_blank">
+              <div class="portfolioProject react">
+                <img src="./assets/linkedinclone.jpg" alt="portfolioimage" />
+                <h3>Linkdin Clone</h3>
+                <h4>React, Firebase</h4>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -161,7 +187,7 @@
       <div id="contact" class="anchor">
         <div class="contact container">
           <h2>Contact Me</h2>
-          <form>
+          <form name="adedoyin portfolio" method="POST" netlify>
             <input type="text" placeholder="Fullname ..." />
             <input type="email" placeholder="Email ..." id="" />
             <textarea
@@ -170,7 +196,7 @@
               cols="30"
               rows="10"
             ></textarea>
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>

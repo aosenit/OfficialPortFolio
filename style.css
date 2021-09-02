@@ -304,7 +304,7 @@ header{
 .portfolioProjectsContainer{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 10px 0;
 }
 
@@ -313,7 +313,7 @@ header{
 .portfolioProject{
     background-color: var(--backcolorOne);
     color: var(--main-color);
-    height: 180px;
+    height: 200px;
     cursor: pointer;
     transition: 0.5s linear opacity;
 }
@@ -480,9 +480,6 @@ footer{
         margin-top: 20px;
     }
 
-    .portfolioProject{
-        height: 200px;
-    }
 
     .footer {
         display: flex;
@@ -555,9 +552,10 @@ footer{
      }
 
     #about, #portfolio, #contact{
-         min-height: 60vh;
+         min-height: 80vh;
      }
 
+     
 
 }
 
