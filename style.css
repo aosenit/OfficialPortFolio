@@ -141,6 +141,11 @@ header{
     z-index: 150;
 }
 
+.heroTextContainer > h2{
+    color: var(--style-color);
+    letter-spacing: .15rem;
+}
+
 .heroTextContainer > h1 {
     font-size: 1.1rem;
 }
@@ -222,11 +227,13 @@ header{
 }
 
 .aboutTexts > h3{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .aboutTexts > h6{
     font-size: .6rem;
+    margin-top: 1rem;
+    line-height: 1rem;
 }
 
 
@@ -258,6 +265,11 @@ header{
 .skillCard > h3{
     font-size: .6rem;
     padding-bottom: 5px;
+}
+
+.skillCard img{
+    height: 22px;
+    width: 22px;
 }
 
 .skillCard > i {
