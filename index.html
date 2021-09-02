@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>New Portfolio</title>
   </head>
@@ -29,16 +30,24 @@
         <div class="menuIcon"><i class="bx bx-menu"></i></div>
       </div>
     </header>
-    <main id="home">
+    <main id="home" class="anchor">
       <div class="hero">
         <div class="heroTextContainer">
           <h2 style="color: red">WELCOME!</h2>
-          <h1>I Am a Frontend Developer</h1>
+          <h1>I'm a Frontend Developer</h1>
+          <div class="Icons">
+            <a href=""><i class="bx bxl-facebook-square"></i></a>
+            <a href=""><i class="bx bxl-linkedin-square"></i></a>
+            <a href=""><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="heroDownArrow Icons">
+            <a href="#about"><i class="bx bx-down-arrow-circle"></i></a>
+          </div>
         </div>
         <div class="heroBackgroundCovering"></div>
       </div>
 
-      <div id="about">
+      <div id="about" class="anchor">
         <div class="about container">
           <h2>About Me</h2>
           <div class="aboutContent">
@@ -106,7 +115,7 @@
         </div>
       </div>
 
-      <div id="portfolio">
+      <div id="portfolio" class="anchor">
         <div class="portfolio container">
           <h2>Portfolio</h2>
           <ul>
@@ -116,50 +125,32 @@
           </ul>
           <div class="portfolioProjectsContainer">
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/deemex.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/linkedinclone.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/maxaudio.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/tdunion.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/trazflix.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
             <div class="portfolioProject">
-              <img
-                src="https://images.unsplash.com/photo-1495954222046-2c427ecb546d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGdhbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                alt="portfolioimage"
-              />
+              <img src="./assets/trazfood.jpg" alt="portfolioimage" />
               <h3>Music App</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
@@ -167,7 +158,7 @@
         </div>
       </div>
 
-      <div id="contact">
+      <div id="contact" class="anchor">
         <div class="contact container">
           <h2>Contact Me</h2>
           <form>
@@ -186,13 +177,14 @@
     </main>
     <footer>
       <div class="footer container">
-        <div class="footerIcons">
-          <a href="">Fac</a>
-          <a href="">Lin</a>
-          <a href="">G</a>
+        <div class="Icons">
+          <a href=""><i class="bx bxl-facebook-square"></i></a>
+          <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          <a href=""><i class="bx bxl-github"></i></a>
         </div>
+
         <div class="footerTexts">
-          <h5>TRAZ<br />&#169; 2021 copyright all right reserved</h5>
+          <h5><span>TRAZ </span> &#169; 2021 copyright all right reserved</h5>
         </div>
       </div>
     </footer>

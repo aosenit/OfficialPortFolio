@@ -61,6 +61,7 @@ header{
     left: 0;
     background-color:var(--backcolorTwo);
     z-index: 200;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
 .headerContainer {
@@ -95,7 +96,7 @@ header{
     left: 0;
 }
 
-.active{
+.active, .headerNav li:hover{
     color: var(--style-color);
 }
 
@@ -138,6 +139,15 @@ header{
     line-height: 3rem;
     padding: 0 40px;
     z-index: 150;
+}
+
+.heroTextContainer > h1 {
+    font-size: 1.1rem;
+}
+
+.heroDownArrow i{
+    margin-top: 8rem;
+    font-size: 2rem;
 }
 
 
@@ -314,7 +324,7 @@ header{
 
 .portfolioProject > img {
     height: 70%;
-    object-position: center center;
+    object-position: center top;
     object-fit: cover;
 }
 
@@ -389,6 +399,9 @@ form button:hover {
    color: var(--main-color);
 }
 
+footer{
+    border-top: 1px solid rgba(0,0,0,.2);
+}
 .footer {
     display: flex;
     height: 4rem;
@@ -398,6 +411,32 @@ form button:hover {
     text-align: center;
     font-size: .8rem;
     line-height: 1.3rem;
+    
+}
+
+.Icons{
+    font-size: 1.2rem;
+    word-spacing: 1rem;
+}
+
+.Icons > a {
+    transition: color ease .5s;
+}
+
+.Icons > a:hover{
+    color: var(--style-color);
+}
+
+.footerTexts span {
+    color: var(--style-color);
+    font-weight: 900; 
+    margin-right: 5px;
+}
+
+.anchor{
+    display: block;
+    padding-top: 6rem;
+    margin-top: -6rem;
 }
 
 @media screen and (min-width: 500px){
@@ -409,6 +448,9 @@ form button:hover {
 }
 
 @media screen and (min-width: 700px){
+    .heroTextContainer > h1 {
+        font-size: 2rem;
+    }
     .aboutContent{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -418,7 +460,11 @@ form button:hover {
     }
 
     .aboutTexts > h6{
-        font-size: .7rem;
+        font-size: .75rem;
+    }
+
+    .aboutImage{
+        height: 400px;
     }
 
     .skills{
@@ -429,12 +475,16 @@ form button:hover {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
-        justify-items: center;
+        justify-items: stretch;
         align-items: center;
         margin-top: 20px;
-      }
+    }
 
-      .footer {
+    .portfolioProject{
+        height: 200px;
+    }
+
+    .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -498,9 +548,16 @@ form button:hover {
          display: none;
      }
 
+     form > button{
+         width: 20%;
+         align-self: flex-start;
+        
+     }
+
     #about, #portfolio, #contact{
          min-height: 60vh;
      }
+
 
 }
 
