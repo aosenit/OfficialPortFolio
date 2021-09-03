@@ -28,6 +28,9 @@ $(document).ready(function () {
 
   //to select portfolio types based on type selected
   $(".portfolioLists li").click(function (e) {
+    $(".portfolioLists li").removeClass("activePortfolio");
+    $(this).addClass("activePortfolio");
+
     if (e.target.id == "javascript") {
       $(".portfolioProject").hide();
       $(".javascript").show("slow");
